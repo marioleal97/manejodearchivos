@@ -18,10 +18,10 @@ int main()
         cout<<"ingrese opcion: ";cin>>opcion;
         switch (opcion) {
         case 1:{
-            cout<<"Ingrese un nombre: "<<endl;cin>>nombre;
+            cout<<"Ingrese un nombre: ";cin.getline(nombre,30);
             cout<<"Ingrese la Claves: "<<endl;cin>>clave;
             cout<<"Ingrese el sueldo: "<<endl;cin>>sueldo;
-            guardar<<nombre<<" "<<clave<<" "<<sueldo<<endl;
+            guardar<<nombre<<","<<clave<<","<<sueldo<<endl;
             system("pause");
             system("CLS");
             break;
